@@ -1,0 +1,13 @@
+//scripted pipeline
+
+node {
+    stage("one") {
+        steps {
+            echo "one"
+        }
+
+        steps("two") {
+            echo "two"
+        }
+    }
+}
